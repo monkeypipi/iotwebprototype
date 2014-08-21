@@ -1,0 +1,397 @@
+.segment-header {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 23px;
+	background: #D3D3D3 url(../images/bgs/backg.png) 0 -298px repeat-x;
+	border: 1px solid #b4b4b4;
+}
+
+.segment-header-part {
+	width: 49%;
+	height: 52px;
+	float: left;
+	text-align: center;
+	color: #676767;
+	font-size: 14px;
+}
+
+.segment-header-part-line {
+	border-right: 1px solid #C9C9C9;
+}
+
+.segment-header-step {
+	background: url(../images/icons/app-step-number.png) no-repeat;
+	padding: 2px 0 2px 24px;
+}
+
+.step1-on {
+	background-position: 0px -20px;
+}
+.step1-off {
+	background-position: 0px 0px;
+}
+.step2-on {
+	background-position: 0px -60px;
+}
+.step2-off {
+	background-position: 0px -40px;
+}
+
+.crumbs{
+	width: 800px;
+	margin: 0 auto;
+	background:url(../images/pic/step1.png) center center no-repeat;
+	height:40px;
+	line-height:40px;
+	margin-bottom:30px;
+}
+.crumbs2{
+	background:url(../images/pic/step2.png) center center no-repeat;
+}
+.crumbs span{
+	font-size:15px;
+}
+.crumbs .fir{
+	margin-left:20px;
+}
+.crumbs .sec{
+	margin-left:190px;
+}
+.getAppkeycontent{
+	width:800px;
+	margin:0 auto;
+	text-align:center;
+}
+.getAppkeycontent h4{
+	padding-bottom:20px;
+	font-size:13px;
+	text-align: left;
+	margin: 44px 0 0 149px;
+	color: #676767;
+}
+.getAppkeycontent .appkey span {
+	width: 455px;
+	margin:0 20px;
+	background: #EFEFEF;
+	padding:20px;
+	font-size:20px;
+	display:inline-block;
+	color: #09A2A8;
+	border: 2px solid #DCDCDC;
+	border-radius: 6px;
+}
+.input_submit{
+	font-size: 13px;
+	color: white;
+	display: inline-block;
+	border: 1px solid #8986A9;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	background: #8C87BB;
+	padding: 15px 0px 14px 0px;
+	width: 195px;
+	text-align: center;
+	box-shadow: inset 0px 1px 1px #C8C6E3;
+	cursor:pointer;
+}
+.description{
+	line-height:30px;
+	margin:32px 150px 84px;
+	text-align: left;
+	font-size:13px;
+	color: #676767;
+}
+.description a{
+	color:#607AB3;
+	text-decoration:underline;
+}
+.complate {
+	height: 61px;
+}
+.view-analytic-btn {
+	padding: 18px 49px;
+	background: url(../images/icons/analytic_button.png) no-repeat;
+	color: #8A8A8A;
+	font-size: 16px;
+}
+.view-test-btn {
+	padding: 18px 48px;
+	background: url(../images/icons/test_button.png) no-repeat;
+	color: #fff;
+	font-size: 16px;
+	margin-right: 20px;
+}
+
+.view-analytic-btn:hover {
+	background-position: 0 -54px;
+}
+.view-test-btn:hover {
+	background-position: 0 -54px;
+}
+
+.b_addApps{
+	font-size:14px;
+	margin-top: 40px;
+}
+.b_addApps tr td{
+	height:30px;
+	padding-bottom:10px;
+	line-height:30px;
+}
+.b_addApps td.fir{
+	padding-right:10px;
+}
+label.error {
+	padding-left: 16px;
+	padding-bottom: 2px;
+	font-weight: normal;
+	color: #EA5200;
+	font-size:14px;
+}
+.radio-list input{
+	position:relative;
+	top:-15px;
+	vertical-align:middle;
+}
+.input2{
+	height:26px;
+	line-height:26px;
+	border: 1px solid #B4B4B4;
+	border-radius: 8px;
+	font-size: 12px;
+	padding: 0px 10px;
+	box-shadow: inset 2px 2px 5px #EAEAEA;
+}
+.new_app_textarea{
+	border: 1px solid #B4B4B4;
+	border-radius: 8px;
+	font-size: 12px;
+	padding: 10px 10px;
+	box-shadow: inset 2px 2px 5px #EAEAEA;
+}
+.appname .icon-staroff{
+	visibility: hidden;
+}
+.appname:hover .icon-staroff /*,.appname .icon-top*/{
+	visibility: visible;
+}
+.stats-summary th{
+    text-indent:25px;
+    background:#f5f5f5;
+    color:#333;
+    line-height:45px;
+    vertical-align:middle;
+}
+.stats-summary-padding td{
+    padding:38px 0;
+}
+.stats-summary td{
+	text-align:center;
+	border-left:1px solid #B4B4B4;
+}
+.stats-summary td .title{
+    line-height:50px;
+}
+.stats-summary td:first-child{
+	border-left:0 none;
+}
+.skimnum2{
+  font-size: 28px;
+  color:#333;
+}
+.platform-iphone{
+  background:url(../images/icons/iPhone-small.png) 0 0 no-repeat;
+}
+.platform-ipad{
+  background:url(../images/icons/ipad-small.png) 0 0 no-repeat;
+}
+.platform-android{
+  background:url(../images/icons/android-small.png) 0 0 no-repeat;
+}
+.platform-wphone{
+  background:url(../images/icons/window-phone-small.png) 0 0 no-repeat;
+}
+.platform-wphone8{
+  background:url(../images/icons/window-phone8-small.png) 0 0 no-repeat;
+}
+
+#test-mode-guide {
+	height: 550px;
+	border: 1px solid #B4B4B4;
+	border-radius: 8px;
+}
+
+#test-mode-guide-top {
+	width: 100%;
+	height: 149px;
+	background: #57C4A9 url(../images/bgs/testmode/test-mode-guide-bg.png) top right no-repeat;
+	margin: auto;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	color: #fff;
+}
+
+#test-mode-guide-top h4 {
+	width: 100%;
+	font-size: 18px;
+	margin: 30px 0 0 56px;
+	float: left;
+}
+
+#test-mode-guide-top p {
+	width: 28%;
+	float: left;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 25px 0 0 56px;
+}
+
+.test-mode-guide-col {
+	width: 30%;
+	height: 220px;
+	float: left;
+	margin: 60px 10px 0 10px;
+}
+
+.test-mode-guide-col h2 {
+	margin: 10px 0 0 110px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.test-mode-guide-col p {
+	width: 80%;
+	margin: 33px 0 0 55px;
+	line-height: 22px;
+	color: #646464;
+}
+
+#test-mode-guide-col1 {
+	background: url(../images/bgs/testmode/test-mode-guide-icon1.png) 56px 0 no-repeat;
+}
+
+#test-mode-guide-col2 {
+	background: url(../images/bgs/testmode/test-mode-guide-icon2.png) 56px 0 no-repeat;
+}
+
+#test-mode-guide-steps {
+	border-left: 1px solid #E3E3E3;
+	background: url(../images/bgs/testmode/test-mode-step.png) 70px 35px no-repeat;
+	margin-left: 62px;
+	width: 28%;
+	margin-top: 43px;
+}
+
+#test-mode-guide-steps ul {
+	margin: 41px 0 0 80px;
+}
+
+#test-mode-guide-steps ul li {
+	margin-bottom: 32px;
+	color: #6AC2F5;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#test-mode-guide-steps ul li span {
+	margin-left: 30px;
+	color: #858585;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+#test-mode-add-btn {
+	width: 193px;
+	height: 45px;
+	color : #FFF;
+	background: url(../images/bgs/testmode/btn.png) no-repeat;
+	margin: 0 auto;
+	margin-top: 27px;
+	line-height: 45px;
+	font-size: 15px;
+	text-indent: 13px;
+}
+
+#test-mode-guide-bottom {
+	width: 100%;
+	height: 100px;
+	float: left;
+	background: #E2E2E2;
+	margin-top: 20px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	text-align: center;
+	border-top: 1px solid #B4B4B4;
+}
+
+.newbtns button{
+	width:198px;
+	height:82px;
+	margin-right:20px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.newbtns .new-app-button{
+	background:#EAEAEA url('../images/bgs/newbtn.png') no-repeat 10px -187px;
+}
+
+.newbtns .new-game-button{
+	background:#EAEAEA url('../images/bgs/newbtn.png') no-repeat 10px -294px;
+}
+
+.newbtnsactive button{
+	width:198px;
+	height:41px;
+	margin-right:20px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.new-app-button{
+	background:#EAEAEA url('../images/bgs/newbtn.png') no-repeat 10px -207px;;
+	color:#666;
+}
+
+.new-game-button{
+	background:#EAEAEA url('../images/bgs/newbtn.png') no-repeat 10px -314px;
+	color:#666;
+}
+
+.new-app-button.active{
+	background: #5DC3A9 url('../images/bgs/newbtn.png') no-repeat 10px 7px;
+	color:#FFF;
+}
+
+.new-game-button.active{
+	background: #5DC3A9 url('../images/bgs/newbtn.png') no-repeat 10px -99px;
+	color:#FFF;
+}
+
+.usegamesdk-des{
+	background:#C6EDEF;
+	border:#7BD7DA;
+	border-radius: 6px;
+	padding:5px 10px;
+	font-size:11px;
+}
+
+.usegamesdk-des li{
+	padding-left: 20px;
+	background: url('../images/icons/home/icon_list.png') no-repeat 0 -2px;
+}
+
+.form-tip {
+	margin-top:-10px;
+	font-size:12px;
+	color:#aaa;
+}
+
+.aligh-top{
+	vertical-align:top;
+}
+
+tr td.tight-line{
+	line-height:20px;
+}
