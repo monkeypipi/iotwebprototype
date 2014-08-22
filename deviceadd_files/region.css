@@ -1,0 +1,104 @@
+.region {
+  width: 320px;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: none;
+  font-size: 12px;
+}
+.region .inset {
+  overflow: hidden;
+}
+.region em {
+  font-style: normal;
+  color: #007ad5;
+  font-weight: bold;
+}
+.region .searchbar input {
+  width: 294px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  line-height: 24px;
+  background: url(../images/icon_search.png) left center no-repeat;
+  padding-left: 24px;
+  outline: none;
+  border-radius: 3px;
+}
+.region .contentbox {
+  line-height: 30px;
+  height: 210px;
+  position: relative;
+}
+.region .contentbox .province,
+.region .contentbox .city,
+.region .contentbox .quick_list {
+  height: 210px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.region .contentbox .province {
+  left: 0;
+}
+.region .contentbox .province span {
+  display: inline-block;
+  margin-right: 3px;
+}
+.region .contentbox .province span a {
+  margin: 0 3px;
+  cursor: pointer;
+}
+.region .contentbox .city {
+  left: 320px;
+}
+.region .contentbox .city .current_province a {
+  margin-left: 4px;
+}
+.region .contentbox .city .citylist a {
+  margin-right: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+.region .contentbox .quick_list {
+  display: none;
+  background: #fff;
+}
+.region .contentbox .quick_list a {
+  margin-right: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+.region .foot {
+  overflow: hidden;
+}
+.region .foot .btn_return,
+.region .foot .btn_confirm,
+.region .foot .btn_cancel {
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  line-height: 24px;
+  padding: 0 12px;
+}
+.region .foot .btn_return {
+  background: #1AB8F3;
+  float: left;
+}
+.region .foot .btn_cancel {
+  background: #f1f1f1;
+  color: #666;
+  float: right;
+}
+.region .foot .btn_confirm {
+  background: #58cb73;
+  float: right;
+}
+.region .foot .fl {
+  float: left;
+}
+.region .foot .fr {
+  float: right;
+}
