@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://developer.yeelink.net/zh_CN/device/manage?device_id=12952 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>设备管理 | Yeelink用户中心</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script>var LOCALE_PATH='/zh_CN';</script>
+<link type="text/css" rel="stylesheet" href="./设备管理   Yeelink用户中心_files/framework.css">
+<link type="text/css" rel="stylesheet" href="./设备管理   Yeelink用户中心_files/main.css">
+<!--[if lt IE 9]>
+    <script src="/resource/for-ie/html5shiv.min.js"></script>
+    <script src="/resource/for-ie/html5shiv-printshiv.min.js"></script>
+<![endif]-->    <link type="text/css" rel="stylesheet" href="./设备管理   Yeelink用户中心_files/switch.css">
+<style type="text/css"></style><link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -90px !important;
+    width: 180px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><script type="text/javascript" charset="UTF-8" src="./设备管理   Yeelink用户中心_files/{common,util,stats}.js"></script></head>
+<body screen_capture_injected="true">
+<div class="page">
+<!--[if lt IE 9]>
+    <style>
+        img.ui.avatar.image{
+            display:none;
+        }
+    </style>
+<![endif]-->
+<!--header begin-->
+<header>
+    <div class="bigcontainer">
+        <div id="logo">
+            <a href="http://developer.yeelink.net/">yeelink用户中心</a>
+        </div>
+        <div class="beta"><p>Beta</p></div>
+        <ul class="header-menu">
+            <li class="logout">
+                <a href="http://www.yeelink.net/user/logout" title="退出">退出</a>
+            </li>
+            <li class="back-home">
+                <a href="http://www.yeelink.net/" title="返回首页">返回首页</a>
+            </li>
+            <li class="back-home">
+                <a href="http://www.yeelink.net/user" title="返回首页">返回旧版</a>
+            </li>
+            <li class="mess-noti">
+                <a href="http://developer.yeelink.net/zh_CN/member/message" title="我的消息">
+                    我的消息
+                                    </a>
+            </li>
+            <li>
+                <img class="ui avatar image" src="./设备管理   Yeelink用户中心_files/avatar.php">
+                <a href="http://developer.yeelink.net/zh_CN/member">
+                    monkeypipi</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- the main menu-->
+<div class="ui teal inverted menu">
+	<div class="bigcontainer">
+		<div class="right menu">
+			<a class="item" href="http://developer.yeelink.net/"><i class="home icon"></i>管理首页</a>
+			<a class="item" href="http://developer.yeelink.net/zh_CN/client-device"><i class="hdd icon"></i>我的终端</a>
+			<a class="active item" href="http://developer.yeelink.net/zh_CN/device"><i class="settings icon"></i>设备开发</a>
+            <a class="item" href="http://developer.yeelink.net/zh_CN/product"><i class="cloud icon"></i>产品开发</a>
+			<a class="item" href="http://developer.yeelink.net/zh_CN/member"><i class="user icon"></i>账户</a>
+		</div>
+	</div>
+</div><!--the main content begin-->
+	<div class="container">
+	<!--the content-->
+		<div class="ui grid">
+						<!--the vertical menu-->
+			<div class="four wide column">
+				<div class="verticalMenu">
+					<div class="ui vertical pointing menu fluid">
+  						<a class="item" href="http://developer.yeelink.net/zh_CN/device/add">
+							<i class="add icon"></i> 创建新设备
+  						</a>
+  						<a class="active teal item" href="http://developer.yeelink.net/zh_CN/device">
+    						<i class="settings icon"></i> 我的设备
+  						</a>
+  						<a class="item" href="http://developer.yeelink.net/zh_CN/action">
+							<i class="terminal icon"></i> 设备动作
+  						</a>
+					</div>
+				</div>
+			</div>			<div class="twelve wide column">
+				<div class="pageHeader">
+					<div class="segment">
+						<h3 class="ui dividing header">
+  							<i class="large setting icon"></i>
+  							<div class="content">
+    							设备管理
+    							<div class="sub header">
+    								<div class="sub header"><a href="http://developer.yeelink.net/zh_CN/">管理首页</a> &gt; <a href="http://developer.yeelink.net/zh_CN/device">我的设备</a> &gt; lngtruck-test</div>
+								</div>
+  							</div>
+						</h3>
+					</div>
+				</div>
+                <!--the device info-->
+				<div class="ui device images middle aligned vertical grid segment">
+                    <div class="eleven wide column verborder">
+                        <div class="ui info segment">
+							<div class="dev-img">
+                                <div class="mod-wrap">
+                                    <ul class="img-wrap">
+                                    	                                    </ul>
+                                    <ul class="num-wrap">
+                                    </ul>
+    							</div>
+                            </div>
+							<h5 class="ui header">lngtruck-test                                                                            <span class="ui type label">pub</span>
+                                    									<div class="sub header">
+																			</div>
+							</h5>
+							<p>设备ID： <span class="stress">12952</span></p>
+							<p>设备地址： <a class="externalUrl" href="http://www.yeelink.net/devices/12952" target="_blank">http://www.yeelink.net/devices/12952</a></p>
+							<p>API 地址： http://api.yeelink.net/devices/12952</p>
+						</div>
+					</div>
+  					<div class="five wide center aligned column">
+                            <a class="ui small green button" href="http://developer.yeelink.net/zh_CN/product/deploy?device_id=12952"><i class="rocket icon"></i>部署</a>
+                                                        <a class="ui small blue button" href="http://developer.yeelink.net/zh_CN/device/edit?device_id=12952"><i class="edit icon"></i>编辑</a>
+                              					</div>
+				</div>
+                <div class="ui vertical segment">
+                    <a class="ui mini red labeled icon button" href="http://developer.yeelink.net/zh_CN/sensor/add?device_id=12952"><i class="add icon"></i>添加传感器</a>
+                    <div class="ui mini icon input searchright">
+                      <input type="text" placeholder="输入传感器名搜索……">
+                      <i class="search icon"></i>
+                   	</div>
+                </div>
+                                                    <div class="ui sensor segment">
+    <h5 class="ui header sprite-icon data">
+        SensorTest <span class="ui type label">数据型</span>    </h5>
+    <div class="ui left corner label error" data-variation="inverted"><div class="text">异常</div></div>    <div class="ui grid">
+        <div class="eleven wide column">
+            <p>传感器ID： <span class="stress">22676</span></p>
+            <p>地址：
+                <a class="externalUrl" href="http://www.yeelink.net/devices/12952/#sensor_22676" target="_blank">
+                    http://www.yeelink.net/devices/12952/#sensor_22676                </a>
+            </p>
+            <p>API 地址： http://api.yeelink.net/v1.1/device/12952/sensor/22676/datapoints</p>
+        </div>
+
+        <div class="five wide center aligned column">
+            <div class="ui data">
+                <p class="data">
+                    0                </p>
+                <p class="unit">摄氏度 / °C</p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="ui basic attached accordion action">
+        <a class="sensorEdit" href="http://developer.yeelink.net/zh_CN/sensor/edit?sensor_id=22676"><i class="edit icon"></i>编辑</a>
+        <a class="btn_delete" href="http://developer.yeelink.net/zh_CN/sensor/delete?sensor_id=22676"><i class="trash icon"></i>删除</a>
+        <a class="title sensorEdit">
+            <i class="dropdown icon"></i>触发动作(0)
+        </a>
+        <div class="content">
+                        <div class="ui">
+                <div class="ui red mini add_trigger button" href="/zh_CN/trigger/value?device_id=12952&amp;sensor_id=22676">
+                	<i class="add icon"></i>添加触发
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chartbox" id="chart_22676">
+        <div class="content">
+        	<div id="" style="height:156px;"></div>
+        </div>
+        <div class="control-panel">
+        	<div class="current_value">
+                0            </div>
+        	<div class="symbol">摄氏度 / °C</div>
+        	<div class="ui teal buttons tiny">
+        		<div class="ui icon button chart_hand_prev" sensorid="22676">
+				  <i class="left arrow icon"></i>
+				</div>
+    			  <div class="chart_hand_time ui teal top right pointing dropdown icon button" style="width:140px;" sensorid="22676">
+                    <span class="text timescale" timescale="600">10分钟</span>
+                    <i class="dropdown icon"></i>
+    			    <div class="menu">
+    			      <div class="item" data-value="600"><i class="time icon"></i> 10分钟</div><div class="item" data-value="3600"><i class="time icon"></i> 1小时</div><div class="item" data-value="10800"><i class="time icon"></i> 3小时</div><div class="item" data-value="43200"><i class="time icon"></i> 12小时</div><div class="item" data-value="86400"><i class="time icon"></i> 1天</div><div class="item" data-value="604800"><i class="time icon"></i> 1周</div><div class="item" data-value="2592000"><i class="time icon"></i> 1月</div><div class="item" data-value="7776000"><i class="time icon"></i> 3月</div>    			    </div>
+    			  </div>
+    			  <div class="ui icon button chart_hand_next" sensorid="22676">
+    			  <i class="right arrow icon"></i>
+    			</div>
+			</div>
+			<div class="last_update_time">
+                1970-01-01 08:00:00            </div>
+    	</div>
+    </div>
+    
+    <a class="btn_chart btn_cahrt_value"><i class="chart basic icon"></i><span>打开图表</span></a>
+</div>                                    <div class="ui sensor segment">
+    <h5 class="ui header sprite-icon data">
+        SensorVolume <span class="ui type label">数据型</span>    </h5>
+    <div class="ui left corner label error" data-variation="inverted"><div class="text">异常</div></div>    <div class="ui grid">
+        <div class="eleven wide column">
+            <p>传感器ID： <span class="stress">22677</span></p>
+            <p>地址：
+                <a class="externalUrl" href="http://www.yeelink.net/devices/12952/#sensor_22677" target="_blank">
+                    http://www.yeelink.net/devices/12952/#sensor_22677                </a>
+            </p>
+            <p>API 地址： http://api.yeelink.net/v1.1/device/12952/sensor/22677/datapoints</p>
+        </div>
+
+        <div class="five wide center aligned column">
+            <div class="ui data">
+                <p class="data">
+                    0                </p>
+                <p class="unit">立方米 / m3</p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="ui basic attached accordion action">
+        <a class="sensorEdit" href="http://developer.yeelink.net/zh_CN/sensor/edit?sensor_id=22677"><i class="edit icon"></i>编辑</a>
+        <a class="btn_delete" href="http://developer.yeelink.net/zh_CN/sensor/delete?sensor_id=22677"><i class="trash icon"></i>删除</a>
+        <a class="title sensorEdit">
+            <i class="dropdown icon"></i>触发动作(0)
+        </a>
+        <div class="content">
+                        <div class="ui">
+                <div class="ui red mini add_trigger button" href="/zh_CN/trigger/value?device_id=12952&amp;sensor_id=22677">
+                	<i class="add icon"></i>添加触发
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chartbox" id="chart_22677">
+        <div class="content">
+        	<div id="" style="height:156px;"></div>
+        </div>
+        <div class="control-panel">
+        	<div class="current_value">
+                0            </div>
+        	<div class="symbol">立方米 / m3</div>
+        	<div class="ui teal buttons tiny">
+        		<div class="ui icon button chart_hand_prev" sensorid="22677">
+				  <i class="left arrow icon"></i>
+				</div>
+    			  <div class="chart_hand_time ui teal top right pointing dropdown icon button" style="width:140px;" sensorid="22677">
+                    <span class="text timescale" timescale="600">10分钟</span>
+                    <i class="dropdown icon"></i>
+    			    <div class="menu">
+    			      <div class="item" data-value="600"><i class="time icon"></i> 10分钟</div><div class="item" data-value="3600"><i class="time icon"></i> 1小时</div><div class="item" data-value="10800"><i class="time icon"></i> 3小时</div><div class="item" data-value="43200"><i class="time icon"></i> 12小时</div><div class="item" data-value="86400"><i class="time icon"></i> 1天</div><div class="item" data-value="604800"><i class="time icon"></i> 1周</div><div class="item" data-value="2592000"><i class="time icon"></i> 1月</div><div class="item" data-value="7776000"><i class="time icon"></i> 3月</div>    			    </div>
+    			  </div>
+    			  <div class="ui icon button chart_hand_next" sensorid="22677">
+    			  <i class="right arrow icon"></i>
+    			</div>
+			</div>
+			<div class="last_update_time">
+                1970-01-01 08:00:00            </div>
+    	</div>
+    </div>
+    
+    <a class="btn_chart btn_cahrt_value"><i class="chart basic icon"></i><span>打开图表</span></a>
+</div>                                    <div class="ui sensor segment">
+    <h5 class="ui header sprite-icon gps">
+        SensorGPS <span class="ui type label">GPS型</span>    </h5>
+    <div class="ui left corner label error" data-variation="inverted"><div class="text">异常</div></div>    <div class="ui grid">
+        <div class="eleven wide column">
+            <p>传感器ID： <span class="stress">22680</span></p>
+            <p>地址：
+                <a class="externalUrl" href="http://www.yeelink.net/devices/12952/#sensor_22680" target="_blank">
+                    http://www.yeelink.net/devices/12952/#sensor_22680                </a>
+            </p>
+            <p>API 地址： http://api.yeelink.net/v1.1/device/12952/sensor/22680/datapoints</p>
+        </div>
+
+        <div class="five wide center aligned column">
+            <div class="ui data">
+                <p class="gps_value">暂无数据</p>            </div>
+        </div>
+    </div>
+
+    <div class="ui basic attached accordion action">
+        <a class="sensorEdit" href="http://developer.yeelink.net/zh_CN/sensor/edit?sensor_id=22680"><i class="edit icon"></i>编辑</a>
+        <a class="btn_delete" href="http://developer.yeelink.net/zh_CN/sensor/delete?sensor_id=22680"><i class="trash icon"></i>删除</a>
+    </div>
+    <div class="chartbox" id="chart_22680">
+        <div class="content">
+        	<div id="" style="height:156px;"></div>
+        </div>
+        <div class="control-panel">
+        	<div class="current_value">
+            暂无数据</div>
+        	<div style="text-align: right"><a href="http://developer.yeelink.net/zh_CN/sensor/gps-track?device_id=12952&sensor_id=22680" target="_blank" class="ui button mini blue">实时跟踪</a> <a href="http://developer.yeelink.net/zh_CN/sensor/gps-re?device_id=12952&sensor_id=22680" target="_blank" class="ui button mini blue">回放</a></div>
+			<div class="last_update_time">
+                 1970-01-01 08:00:00            </div>
+    	</div>
+    </div>
+    
+    <a class="btn_chart btn_map"><i class="chart basic icon"></i><span>打开地图</span></a>
+</div>                                    <div class="ui sensor segment">
+    <h5 class="ui header sprite-icon switchicon">
+        sensor4 <span class="ui type label">开关型</span>    </h5>
+        <div class="ui grid">
+        <div class="eleven wide column">
+            <p>传感器ID： <span class="stress">22681</span></p>
+            <p>地址：
+                <a class="externalUrl" href="http://www.yeelink.net/devices/12952/#sensor_22681" target="_blank">
+                    http://www.yeelink.net/devices/12952/#sensor_22681                </a>
+            </p>
+            <p>API 地址： http://api.yeelink.net/v1.1/device/12952/sensor/22681/datapoints</p>
+        </div>
+
+        <div class="five wide center aligned column">
+                        <div class="ui data">
+                <input type="checkbox" id="switch_22681" class="checkbox_switcher" sensorid="22681">
+                <label class="switch" for="switch_22681">
+            		<div class="handler">
+            			<div class="loading"></div>
+            		</div>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui basic attached accordion action">
+        <a class="sensorEdit" href="http://developer.yeelink.net/zh_CN/sensor/edit?sensor_id=22681"><i class="edit icon"></i>编辑</a>
+        <a class="btn_delete" href="http://developer.yeelink.net/zh_CN/sensor/delete?sensor_id=22681"><i class="trash icon"></i>删除</a>
+    </div>
+</div>                                    <div class="ui sensor segment">
+    <h5 class="ui header sprite-icon key">
+        sensor5 <span class="ui type label">泛型</span>    </h5>
+    <div class="ui left corner label error" data-variation="inverted"><div class="text">异常</div></div>    <div class="ui grid">
+        <div class="eleven wide column">
+            <p>传感器ID： <span class="stress">22682</span></p>
+            <p>地址：
+                <a class="externalUrl" href="http://www.yeelink.net/devices/12952/#sensor_22682" target="_blank">
+                    http://www.yeelink.net/devices/12952/#sensor_22682                </a>
+            </p>
+            <p>API 地址： http://api.yeelink.net/v1.1/device/12952/sensor/22682/datapoints</p>
+        </div>
+
+        <div class="five wide center aligned column">
+            <div class="ui data">
+                <p class="unit" style="overflow:hidden;word-break: break-all;height:60px;"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui basic attached accordion action">
+        <a class="sensorEdit" href="http://developer.yeelink.net/zh_CN/sensor/edit?sensor_id=22682"><i class="edit icon"></i>编辑</a>
+        <a class="btn_delete" href="http://developer.yeelink.net/zh_CN/sensor/delete?sensor_id=22682"><i class="trash icon"></i>删除</a>
+    </div>
+</div>                                    <div class="ui sensor segment">
+    <h5 class="ui header sprite-icon pic">
+        sensor6 <span class="ui type label">图片型</span>    </h5>
+    <div class="ui left corner label error" data-variation="inverted"><div class="text">异常</div></div>    <div class="ui grid">
+        <div class="eleven wide column">
+            <p>传感器ID： <span class="stress">22684</span></p>
+            <p>地址：
+                <a class="externalUrl" href="http://www.yeelink.net/devices/12952/#sensor_22684" target="_blank">
+                    http://www.yeelink.net/devices/12952/#sensor_22684                </a>
+            </p>
+            <p>API 地址： http://api.yeelink.net/v1.1/device/12952/sensor/22684/datapoints</p>
+        </div>
+
+        <div class="five wide center aligned column">
+            <div class="ui data">
+                <p class="data" style="font-size:24px;">0KB / 10MB</p>
+                <p class="unit">图片空间</p>
+            </div>
+        </div>
+    </div>
+    <div class="ui basic attached accordion action">
+        <a class="sensorEdit" href="http://developer.yeelink.net/zh_CN/sensor/edit?sensor_id=22684"><i class="edit icon"></i>编辑</a>
+        <a class="btn_delete" href="http://developer.yeelink.net/zh_CN/sensor/delete?sensor_id=22684"><i class="trash icon"></i>删除</a>
+    </div>
+    
+    <a class="btn_chart" href="http://developer.yeelink.net/zh_CN/sensor/photo-player?sensor_id=22684" target="_blank"><i class="photo basic icon"></i><span>打开播放器</span></a>
+</div>                                    <div class="ui sensor segment">
+    <h5 class="ui header sprite-icon bird">
+        sensor7 <span class="ui type label">微博型</span>    </h5>
+    <div class="ui left corner label error" data-variation="inverted"><div class="text">异常</div></div>    <div class="ui grid">
+        <div class="eleven wide column">
+            <p>传感器ID： <span class="stress">22685</span></p>
+            <p>地址：
+                <a class="externalUrl" href="http://www.yeelink.net/devices/12952/#sensor_22685" target="_blank">
+                    http://www.yeelink.net/devices/12952/#sensor_22685                </a>
+            </p>
+            <p>API 地址： http://api.yeelink.net/v1.1/device/12952/sensor/22685/datapoints</p>
+        </div>
+
+        <div class="five wide center aligned column">
+            <div class="ui data">
+                
+                                <p class="data">暂无数据</p>
+                            </div>
+        </div>
+    </div>
+    <div class="ui basic attached accordion action">
+        <a class="sensorEdit" href="http://developer.yeelink.net/zh_CN/sensor/edit?sensor_id=22685"><i class="edit icon"></i>编辑</a>
+        <a class="btn_delete" href="http://developer.yeelink.net/zh_CN/sensor/delete?sensor_id=22685"><i class="trash icon"></i>删除</a>
+        <a class="title sensorEdit">
+            <i class="dropdown icon"></i>触发动作(0)
+        </a>
+        <div class="content">
+                        <div class="ui vertical segment">
+                <div class="ui red mini add_trigger button" href="/zh_CN/trigger/weibo?device_id=12952&amp;sensor_id=22685">
+                    <i class="add icon"></i>
+                    添加触发
+                </div>
+            </div>
+        </div>
+    </div>
+</div>                
+                <div class="ui small pagination menu ">
+                <a class="icon item">
+                    <i class="icon left arrow"></i>
+                </a>
+                <a class="active item">
+                    1
+                </a>
+                <a class="icon item">
+                    <i class="icon right arrow"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--addNewDIYAction model-->
+    <div class="ui small bind_action modal">
+    </div>
+<!--footer begin-->
+<footer>
+    <div id="copyrights">
+        <div class="inset">
+            <div class="bigcontainer">
+                <div class="fl">
+                    <div class="logo"></div>
+                    <p>© 2014 青岛亿联客信息技术有限公司, 版权所有
+                        <br>
+                        <a href="http://www.miibeian.gov.cn/" target="_blank">鲁ICP备12022271号</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="./设备管理   Yeelink用户中心_files/jquery.min.js"></script>
+<script type="text/javascript" src="./设备管理   Yeelink用户中心_files/framework.js"></script>
+<!--[if IE]>
+       <script src="/resource/for-ie/console-polyfill.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+    <script src="/resource/for-ie/rem.min.js"></script>
+    <script src="/resource/for-ie/selectivizr-min.js"></script>
+<![endif]-->
+<script>
+    $(".btn_delete").click(function(e) {
+        if (!confirm("本操作无法恢复，确认继续操作")) {
+            e.preventDefault();
+            return false;
+        }
+    });
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5f94f1c230854f8066134ebed007b8c7' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="http://hm.baidu.com/h.js?5f94f1c230854f8066134ebed007b8c7" type="text/javascript"></script><script src="./设备管理   Yeelink用户中心_files/js"></script><script src="./设备管理   Yeelink用户中心_files/main.js" type="text/javascript"></script>
+<script src="./设备管理   Yeelink用户中心_files/value-data-chart.js"></script>
+<script type="text/javascript" src="./设备管理   Yeelink用户中心_files/device-imgplay.js"></script>
+<script src="./设备管理   Yeelink用户中心_files/echarts-plain.js"></script>
+
+<script>
+$('.ui.chart_hand_time').dropdown({
+    onChange: function(value, text){
+        chartsTable[this.getAttribute('sensorid')].setTimeScale(value);
+    }
+});
+$('.ui.accordion').accordion();
+
+$('.show a').click(function(){
+    $('.show.chart').toggleClass('active');
+    $('.chartShow').toggleClass('active');
+});
+
+$('.add_trigger.button').click(function(){
+    var icon_o = $(this).find('.add.icon');
+    icon_o.toggleClass('loading');  
+    var url = this.getAttribute('href');
+    $.ajax({
+        url: url,
+        dataType: 'html',
+        type: 'post',
+        success: function(result){
+            $('.bind_action.modal').html(result);
+            $('.bind_action.modal').modal().modal('show');
+            icon_o.toggleClass('loading');
+        }
+    });
+});
+$('.btn_tri_edit').click(function(e){
+    e.preventDefault();
+    var icon_o = $(this).find('.edit.icon');
+    icon_o.toggleClass('loading');
+    var url = this.href;
+    var url = this.getAttribute('href');
+    $.ajax({
+        url: url,
+        dataType: 'html', 
+        type: 'post',
+        success: function(result){
+            $('.bind_action.modal').html(result);
+            $('.bind_action.modal').modal().modal('show');
+            icon_o.toggleClass('loading');
+        }
+    });
+});
+</script>
+
+<embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" height="0" width="0"></body></html>

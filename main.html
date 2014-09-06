@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>速必达| 管理首页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>
+    var LOCALE_PATH = '/zh_CN';
+    </script>
+    <link type="text/css" rel="stylesheet" href="./css/framework.css">
+    <link type="text/css" rel="stylesheet" href="./css/main.css">
+    <!--[if lt IE 9]>
+    <script src="/resource/for-ie/html5shiv.min.js"></script>
+    <script src="/resource/for-ie/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./css/progress-bar.css">
+    <style type="text/css"></style>
+    <link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css">
+    <script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/js/page_context.js"></script>
+    <style>
+    [touch-action="none"] {
+        -ms-touch-action: none;
+        touch-action: none;
+    }
+    [touch-action="pan-x"] {
+        -ms-touch-action: pan-x;
+        touch-action: pan-x;
+    }
+    [touch-action="pan-y"] {
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    }
+    [touch-action="scroll"],
+    [touch-action="pan-x pan-y"],
+    [touch-action="pan-y pan-x"] {
+        -ms-touch-action: pan-x pan-y;
+        touch-action: pan-x pan-y;
+    }
+    </style>
+    <style id="style-1-cropbar-clipper">
+    /* Copyright 2014 Evernote Corporation. All rights reserved. */
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -90px !important;
+        width: 180px !important;
+        border: 2px rgba(255, 255, 255, .38) solid !important;
+        border-radius: 4px !important;
+    }
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
+</head>
+
+<body screen_capture_injected="true">
+    <div class="page">
+        <!--[if lt IE 9]>
+    <style>
+        img.ui.avatar.image{
+            display:none;
+        }
+    </style>
+    <![endif]-->
+        <!--header begin-->
+        <header>
+            <div class="bigcontainer">
+                <div id="logo">
+                    <a href="http://developer.yeelink.net/">yeelink用户中心</a>
+                </div>
+                <div class="beta">
+                    <p>Beta</p>
+                </div>
+                <ul class="header-menu">
+                    <li class="logout">
+                        <a href="http://www.yeelink.net/user/logout" title="退出">退出</a>
+                    </li>
+                    <li class="back-home">
+                        <a href="http://www.yeelink.net/" title="返回首页">返回首页</a>
+                    </li>
+
+                    <li class="mess-noti">
+                        <a href="http://developer.yeelink.net/zh_CN/member/message" title="我的消息">消息通知</a>
+                    </li>
+                    <li>
+                        <img class="ui avatar image" src="./users_files/avatar.php">
+                        <a href="http://developer.yeelink.net/zh_CN/member">XX集团</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- the main menu-->
+        <div class="ui teal inverted menu">
+            <div class="bigcontainer">
+                <div class="right menu">
+                    <a class="item" href="#"><i class="home icon"></i>首页</a>
+                    <a class="item" href="./devices.html"><i class="hdd icon"></i>设备管理</a>
+                    <a class="item" href="./devices.html"><i class="settings icon"></i>设备监控</a>
+                    <a class="item" href="./devices.html"><i class="settings icon"></i>事件查看</a>
+                    <a class="active item" href="./users.html"><i class="cloud icon"></i>高级管理</a>
+                    <a class="item" href="./users.html"><i class="user icon"></i>账户设置</a>
+                </div>
+            </div>
+        </div>
+        <!--the main content begin-->
+        <div class="container">
+            <!--the content-->
+            <div class="ui grid">
+                <div class="four wide column">
+                    <div class="verticalMenu">
+                        <div class="ui vertical pointing menu fluid">
+                            <div class="active teal normal item">
+                                <div class="ui grid">
+                                    <div class="seven wide column">
+                                        <div class="user avatar">
+                                            <img src="./main_files/avatar(1).php">
+                                        </div>
+                                    </div>
+                                    <div class="nine wide column">
+                                        <h4 class="user name">xxxx</h4>
+                                        <!--
+                                        <p class="user des">普通用户
+                                            <span class="update"><a href="" title="功能测试中">升级</a>
+                                            </span>
+                                        </p>-->
+                                        <p class="user des">注册于
+                                            <span id="t">2014/07/25</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="normal item">
+                                <div class="ui user segment">
+                                    <h4>设备概况</h4>
+                                    <div class="ui user segment">
+                                        <p class="name">可监控加气站</p>
+                                        <p class="num">2
+                                            <span class="unit">个</span>
+                                        </p>
+                                        <p class="name">可监控槽车</p>
+                                        <p class="num">2
+                                            <span class="unit">辆</span>
+                                        </p>
+
+                                        <!--
+                                        <p class="name">设备总数</p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                <span class="sr-only">10%</span>
+                                            </div>
+                                            <span class="progress-dis scale">2 / 20</span>
+                                        </div>
+                                        <p class="name">产品总数</p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                                                <span class="sr-only">20%</span>
+                                            </div>
+                                            <span class="progress-dis scale">0 / 0</span>
+                                        </div>
+                                        <p class="name">图片空间
+                                            <span style="font-size:12px;color:#aaa;">(永久有效)</span>
+                                        </p>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: ">
+                                                <span class="sr-only"></span>
+                                            </div>
+                                            <span class="progress-dis mb">0KB / 200MB</span>
+                                        </div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="twelve wide column">
+                    <div class="pageHeader">
+                        <div class="segment">
+                            <h3 class="ui dividing header">
+                                <i class="large home icon"></i>
+                                <div class="content">
+                                    管理首页
+                                    <div class="sub header">快速查看和管理</div>
+                                </div>
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="ui vertical segment">
+                        <h4 class="ui header"><i class="settings icon"></i>加气站信息
+                            <span class="ui small icon input searchright">
+                                <input type="text" placeholder="输入加气站搜索……">
+                                <i class="search icon"></i>
+                            </span>
+                            <a id="deviceQuickButton" class="ui red small labeled icon button" href="http://developer.yeelink.net/zh_CN/device">
+                                <i class="settings icon"></i>管理所有设备
+                            </a>
+                        </h4>
+
+                    </div>
+
+                    <!--the Product list-->
+                    <div class="panel panel-primary">
+                        <!-- Default panel contents -->
+                        <div class="panel-heading">加气站列表</div>
+                        <!-- Table -->
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>名称</th>
+                                    <th>位置</th>
+                                    <th>运行状态</th>
+                                    <th>运营状态</th>
+                                    <th>上报时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1号加气站</td>
+                                    <td>北京怀柔</td>
+                                    <td>高限预警</td>
+                                    <td>运营</td>
+                                    <td>2014-08-18 22:00:15</td>
+                                    <td>
+                                        <div class="ui buttons">
+                                            <a class="ui tiny blue button" href="http://developer.yeelink.net/zh_CN/device/manage?device_id=13418"><i class="setting icon"></i>管理</a>
+                                            <a class="ui tiny red button btn_delete" href="http://developer.yeelink.net/zh_CN/device/delete?device_id=13418"><i class="trash icon"></i>详情</a>
+                                        </div>
+                                    </td>
+                                    <!-- <a href="file:///Users/admin/Documents/Hang/LNGTOP/%E9%A1%B9%E7%9B%AE/02%20%E9%80%9F%E5%BF%85%E8%BE%BE/iotWebPrototype/users_files/users.html">查看</a></td> 
+			            <td><a href="file:///Users/admin/Documents/Hang/LNGTOP/%E9%A1%B9%E7%9B%AE/02%20%E9%80%9F%E5%BF%85%E8%BE%BE/iotWebPrototype/users_files/users.html">编辑</a></td>
+			            <td><a href="file:///Users/admin/Documents/Hang/LNGTOP/%E9%A1%B9%E7%9B%AE/02%20%E9%80%9F%E5%BF%85%E8%BE%BE/iotWebPrototype/users_files/users.html">锁定</a></td> -->
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>2号加气站</td>
+                                    <td>北京丰台</td>
+                                    <td>正常</td>
+                                    <td>测试</td>
+                                    <td>2014-08-18 22:00:15</td>
+                                    <td>
+                                        <div class="ui buttons">
+                                            <a class="ui tiny blue button" href="http://developer.yeelink.net/zh_CN/device/manage?device_id=13418"><i class="setting icon"></i>管理</a>
+                                            <a class="ui tiny red button btn_delete" href="http://developer.yeelink.net/zh_CN/device/delete?device_id=13418"><i class="trash icon"></i>详情</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>3号加气站</td>
+                                    <td>北京昌平</td>
+                                    <td>低限报警</td>
+                                    <td>运营</td>
+                                    <td>2014-08-18 22:00:15</td>
+                                    <td>
+                                        <div class="ui buttons">
+                                            <a class="ui tiny blue button" href="http://developer.yeelink.net/zh_CN/device/manage?device_id=13418"><i class="setting icon"></i>管理</a>
+                                            <a class="ui tiny red button btn_delete" href="http://developer.yeelink.net/zh_CN/device/delete?device_id=13418"><i class="trash icon"></i>详情</a>
+                                        </div>
+                                    </td>
+                                    <!--
+			            <td><a href="file:///Users/admin/Documents/Hang/LNGTOP/%E9%A1%B9%E7%9B%AE/02%20%E9%80%9F%E5%BF%85%E8%BE%BE/iotWebPrototype/users_files/users.html">查看</a></td>
+			            <td><a href="file:///Users/admin/Documents/Hang/LNGTOP/%E9%A1%B9%E7%9B%AE/02%20%E9%80%9F%E5%BF%85%E8%BE%BE/iotWebPrototype/users_files/users.html">编辑</a></td>
+			            <td><a href="file:///Users/admin/Documents/Hang/LNGTOP/%E9%A1%B9%E7%9B%AE/02%20%E9%80%9F%E5%BF%85%E8%BE%BE/iotWebPrototype/users_files/users.html">锁定</a></td>
+			        -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <ul class="pagination">
+                        <li><a href="#">&laquo;</a>
+                        </li>
+                        <li><a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a>
+                        </li>
+                        <li><a href="#">3</a>
+                        </li>
+                        <li><a href="#">4</a>
+                        </li>
+                        <li><a href="#">5</a>
+                        </li>
+                        <li><a href="#">&raquo;</a>
+                        </li>
+                    </ul>
+
+                    <div class="ui pagination small menu">
+                        <a class="icon item disabled">
+                            <i class="icon left arrow"></i>
+                        </a>
+                        <a class="active item" href="">1</a>
+                        <a class="icon item disabled">
+                            <i class="icon right arrow"></i>
+                        </a>
+                    </div>
+
+
+                    <!--device list-->
+                    <h4 class="ui header"><i class="settings icon"></i>我的设备</h4>
+                    <div class="ui three column grid" id="indexList">
+                        <div class="row">
+
+                            <div class="column">
+                                <div class="ui blue segment">
+                                    <a href="http://developer.yeelink.net/zh_CN/device/manage?device_id=12952" class="content">
+                                        <h4 class="deviceName">lngtruck-test
+                                            <span class="ui type label">PUB</span>
+                                        </h4>
+                                        <p class="deviceId">设备ID：12952</p>
+                                        <p class="sensorStatus">暂无传感器</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="ui blue segment">
+                                    <a href="http://developer.yeelink.net/zh_CN/device/manage?device_id=13418" class="content">
+                                        <h4 class="deviceName">testagain
+                                            <span class="ui type label">PUB</span>
+                                        </h4>
+                                        <p class="deviceId">设备ID：13418</p>
+                                        <p class="sensorStatus">暂无传感器</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="ui blue segment">
+                                    <a class="content" href="http://developer.yeelink.net/zh_CN/device/add">
+                                        <h4 class="newDevice"><i class="huge add icon"></i>
+                                            添加新设备
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="ui header"><i class="cloud icon"></i>我的产品</h4>
+                    <div class="ui three column grid" id="indexList">
+                        <div class="row">
+                            <div class="column">
+                                <div class="ui blue segment">
+                                    <a class="content" href="http://developer.yeelink.net/zh_CN/product/deploy">
+                                        <h4 class="newDevice"><i class="huge rocket icon"></i>
+                                            部署新产品
+                                        </h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer begin-->
+    <footer>
+        <div id="copyrights">
+            <div class="inset">
+                <div class="bigcontainer">
+                    <div class="fl">
+                        <div class="logo"></div>
+                        <p>© 2014 张家港清源云顶信息技术有限公司, 版权所有
+                            <br>
+                            <a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备14033577号</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/framework.js"></script>
+    <!--[if IE]>
+       <script src="/resource/for-ie/console-polyfill.js"></script>
+       <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/resource/for-ie/rem.min.js"></script>
+    <script src="/resource/for-ie/selectivizr-min.js"></script>
+    <![endif]-->
+    <script>
+    $(".btn_delete").click(function(e) {
+        if (!confirm("本操作无法恢复，确认继续操作")) {
+            e.preventDefault();
+            return false;
+        }
+    });
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5f94f1c230854f8066134ebed007b8c7' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script src="http://hm.baidu.com/h.js?5f94f1c230854f8066134ebed007b8c7" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/jquery.zclip.min.js"></script>
+    <script type="text/javascript" src="./js/alert.js"></script>
+    <script>
+    $(document).ready(function() {
+
+        $('a#copy-apiKey').popup({
+            on: 'hover',
+            transition: 'fade'
+        });
+        $('a#copy-apiKey').zclip({
+            path: '../resource/developer/javascript/ZeroClipboard.swf',
+            copy: function() {
+                return $('input#apiKey').val();
+            },
+            afterCopy: function() {
+                $('.ui.popup.visible').text('已复制！');
+            }
+        });
+
+    });
+    </script>
+
+
+    <embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" height="0" width="0">
+</body>
+
+</html>
